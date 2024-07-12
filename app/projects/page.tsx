@@ -91,7 +91,7 @@ export default function Projects() {
                 >
                   <FaGithub className=" text-3xl " />
                 </a>
-              )}{" "}
+              )}
               {project.figma && (
                 <a
                   href={project.figma}

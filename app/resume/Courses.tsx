@@ -45,7 +45,7 @@ export default function Courses() {
                   <div className="w-full h-[1px] bg-white/60 "></div>
                   <a href={course.link}>
                     <button className=" flex group xl:text-lg sm:text-base text-sm gap-2 font-bold  justify-center items-center bg-white/10 text-main p-4 rounded-full hover:bg-main hover:text-primary transition-all ease-in-out duration-300 ">
-                      View Certificate{" "}
+                      View Certificate
                       <BsArrowUpRight className=" xl:text-xl sm:text-lg text-base group-hover:rotate-45 transition-all duration-75  ease-in-out" />
                     </button>
                   </a>

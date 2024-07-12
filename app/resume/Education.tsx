@@ -37,7 +37,7 @@ export default function Courses() {
                   <div className=" flex flex-col gap-5">
                     <a href={course.link} className=" place-self-end">
                       <button className=" flex group text-[10px] gap-2 font-bold  justify-center items-center bg-white/10 text-main p-2 rounded-full hover:bg-main hover:text-primary transition-all ease-in-out duration-300 ">
-                        View Certificate{" "}
+                        View Certificate
                         <BsArrowUpRight className="  text-sm group-hover:rotate-45 transition-all duration-75  ease-in-out" />
                       </button>
                     </a>

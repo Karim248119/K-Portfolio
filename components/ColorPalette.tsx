@@ -1,14 +1,21 @@
 "use client";
 
-import { ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { IoColorFilterOutline } from "react-icons/io5";
 
 const ColorPalette = () => {
   const [paletteVisible, setPaletteVisible] = useState(false);
   const [lastClickedButton, setLastClickedButton] = useState<any>(null);
-  const [selectedColor, setSelectedColor] = useState<string | null>(
-    localStorage.getItem("color") || null
-  );
+  const [selectedColor, setSelectedColor] = useState<string | null>(null);
+
+  useEffect(() => {
+    const storedColor = localStorage.getItem("color");
+    if (storedColor) {
+      setSelectedColor(storedColor);
+      document.documentElement.style.setProperty("--main-color--", storedColor);
+    }
+  }, []);
+
   useEffect(() => {
     if (selectedColor) {
       document.documentElement.style.setProperty(

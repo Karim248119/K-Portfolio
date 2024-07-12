@@ -62,13 +62,13 @@ export default function HomePage() {
                 className=" xl:h-14 xl:w-14 h-8 w-8 flex justify-center items-center bg-primary border-[2px] text-main border-main rounded-full xl:text-2xl text-xs  hover:text-primary hover:bg-main transition-all duration-300 ease-in-out"
               >
                 <FaLinkedinIn />
-              </a>{" "}
+              </a>
               <a
                 href="https://github.com/Karim248119"
                 className=" xl:h-14 xl:w-14 h-8 w-8 flex justify-center items-center bg-primary border-[2px] text-main border-main rounded-full xl:text-2xl text-xs  hover:text-primary hover:bg-main transition-all duration-300 ease-in-out"
               >
                 <FaGithub />
-              </a>{" "}
+              </a>
               <a
                 href="https://www.facebook.com/kareem.kemo.75098364?mibextid=ZbWKwL"
                 className=" xl:h-14 xl:w-14 h-8 w-8 flex justify-center items-center bg-primary border-[2px] text-main border-main rounded-full xl:text-2xl text-xs  hover:text-primary hover:bg-main transition-all duration-300 ease-in-out"
