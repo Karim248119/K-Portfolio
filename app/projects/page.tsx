@@ -9,7 +9,7 @@ import { TbWorld } from "react-icons/tb";
 import { RxArrowTopRight } from "react-icons/rx";
 import { FaFigma } from "react-icons/fa6";
 
-export default function page() {
+export default function Projects() {
   const [project, setProject] = useState(PROJECTS[0]);
   const [Grab, setGrab] = useState(false);
   const handleSlider = (swiper: any) => {
