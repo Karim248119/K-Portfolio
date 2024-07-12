@@ -39,7 +39,7 @@ export default function HomePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4, delay: 1.5, ease: "easeIn" }}
-      className="relative mt-20"
+      className="relative xl:mt-20 bg-primary "
     >
       <div className="xl:h-[100vh] h-auto xl:w-[70%] w-full text-white grid xl:grid-cols-5 xl:grid-rows-1 grid-rows-2 mx-auto xl:-mt-20 ">
         <div className="  pt-5  w-full h-full flex flex-col justify-center items-center xl:items-start gap-12 xl:col-span-3 order-2 xl:order-1">

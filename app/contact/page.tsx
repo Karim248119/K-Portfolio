@@ -16,7 +16,7 @@ const ContactLine = ({
   value: string;
 }) => {
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-3 bg-primary">
       <div className="md:h-16 md:w-16 h-12 w-12 rounded-md bg-white/10 flex justify-center items-center text-main md:text-2xl text-xl">
         {icon}
       </div>

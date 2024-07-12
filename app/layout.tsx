@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>Karim A. Hassan</title>
-      <body className={JetBrainsMono.className}>
+      <body className={JetBrainsMono.className && "bg-primary"}>
         <Navbar />
         <StairTransition />
         <PageTransition>{children}</PageTransition>

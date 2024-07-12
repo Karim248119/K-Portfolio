@@ -13,7 +13,7 @@ export default function Resume() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4, delay: 2, ease: "easeIn" }}
-      className=" w-screen h-screen  flex flex-col sm:justify-center items-center py-20 sm:py-0"
+      className=" w-screen h-screen  flex flex-col sm:justify-center items-center py-20 sm:py-0 bg-primary"
     >
       <div className=" xl:w-[60%] w-[90%] h-[30vh]   ">
         <Tabs

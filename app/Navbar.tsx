@@ -22,7 +22,7 @@ export default function Navbar() {
   const pathName = usePathname();
   return (
     <nav className="z-50 bg-primary">
-      <div className=" bg-primary h-20 w-full flex justify-between fixed items-center flex-row  top-0 left-0 px-8 xl:px-20 text-white z-30">
+      <div className=" bg-primary h-20 w-full flex justify-between absolute items-center flex-row  top-0 left-0 px-8 xl:px-20 text-white z-30">
         <h1 className="xl:text-3xl text-lg font-semibold">
           Karim
           <span className=" text-main">.</span>
