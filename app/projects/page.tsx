@@ -42,6 +42,7 @@ export default function Projects() {
                 return (
                   <SwiperSlide key={index}>
                     <img
+                      alt="project pic"
                       src={item.img}
                       className=" w-full flex justify-center items-center text-black"
                     ></img>

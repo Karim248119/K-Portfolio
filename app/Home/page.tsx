@@ -43,15 +43,12 @@ export default function HomePage() {
     >
       <div className="xl:h-[100vh] h-auto xl:w-[70%] w-full text-white grid xl:grid-cols-5 xl:grid-rows-1 grid-rows-2 mx-auto xl:-mt-20 ">
         <div className="  pt-5  w-full h-full flex flex-col justify-center items-center xl:items-start gap-12 xl:col-span-3 order-2 xl:order-1">
-          <div className=" xl:text-5xl text-xl font-bold">Hello, I am</div>
+          <div className=" xl:text-5xl text-xl font-bold">Hello, I&apos;m</div>
           <div className="xl:text-6xl text-2xl font-bold text-main">
             Karim Abdelhalim
           </div>
           <div className="xl:text-2xl text-sm">
-            I am{" "}
-            <span className="text-main job" ref={el}>
-              {" "}
-            </span>
+            I&apos;m <span className="text-main job" ref={el}></span>
           </div>
           <div className="flex xl:gap-5 gap-2 xl:mt-10 mt-5 ">
             <a href="/cv.pdf" download>
