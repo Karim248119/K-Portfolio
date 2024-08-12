@@ -1,21 +1,28 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { PROJECTS } from "./Projects";
-import { FaGithub, FaGooglePlay } from "react-icons/fa";
-import { TbWorld } from "react-icons/tb";
+import {
+  FaChevronLeft,
+  FaChevronRight,
+  FaGithub,
+  FaGooglePlay,
+} from "react-icons/fa";
 import { RxArrowTopRight } from "react-icons/rx";
 import { FaFigma } from "react-icons/fa6";
 
 export default function Projects() {
   const [project, setProject] = useState(PROJECTS[0]);
   const [Grab, setGrab] = useState(false);
+  const swiperRef = useRef(null);
+
   const handleSlider = (swiper: any) => {
     const currentIndex = swiper.activeIndex;
     setProject(PROJECTS[currentIndex]);
   };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -36,20 +43,33 @@ export default function Projects() {
               onMouseUp={() => {
                 setGrab(false);
               }}
+              onSwiper={(swiper) => (swiperRef.current = swiper)}
               className={`${Grab ? "cursor-grabbing" : "cursor-grab"}`}
             >
-              {PROJECTS.map((item, index) => {
-                return (
-                  <SwiperSlide key={index}>
-                    <img
-                      alt="project pic"
-                      src={item.img}
-                      className=" w-full flex justify-center items-center text-black"
-                    ></img>
-                  </SwiperSlide>
-                );
-              })}
+              {PROJECTS.map((item, index) => (
+                <SwiperSlide key={index}>
+                  <img
+                    alt="project pic"
+                    src={item.img}
+                    className=" w-full flex justify-center items-center text-black"
+                  />
+                </SwiperSlide>
+              ))}
             </Swiper>
+            <div className="flex justify-center gap-5 mt-2">
+              <button
+                className="bg-main rounded-full  p-1"
+                onClick={() => swiperRef.current?.slidePrev()}
+              >
+                <FaChevronLeft />
+              </button>
+              <button
+                className="bg-main rounded-full  p-1"
+                onClick={() => swiperRef.current?.slideNext()}
+              >
+                <FaChevronRight />
+              </button>
+            </div>
           </div>
           <div className=" w-full md:aspect-[2.5/2] flex  flex-col gap-5 p-5 md:p-0 md:gap-0 md:justify-between">
             <div className=" md:text-[7vw] text-[20vw] leading-none  text-outline text-transparent font-extrabold">
