@@ -28,10 +28,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>Karim A. Hassan</title>
-      <body className={JetBrainsMono.className && "bg-primary"}>
-        <Navbar />
-        <StairTransition />
-        <PageTransition>{children}</PageTransition>
+      <body className={`${JetBrainsMono.className} bg-primary`}>
+        <Theme>
+          <Navbar />
+          <StairTransition />
+          <PageTransition>{children}</PageTransition>
+        </Theme>
       </body>
     </html>
   );

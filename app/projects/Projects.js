@@ -110,9 +110,3 @@ Educational app for medical students features a vast collection of questions for
     github: "https://github.com/Karim248119/Bakery",
   },
 ];
-
-//pet
-//store
-//hr
-//store2
-//night
