@@ -16,7 +16,7 @@ import { FaFigma } from "react-icons/fa6";
 export default function Projects() {
   const [project, setProject] = useState(PROJECTS[0]);
   const [Grab, setGrab] = useState(false);
-  const swiperRef = useRef(null);
+  const swiperRef = useRef<any>(null);
 
   const handleSlider = (swiper: any) => {
     const currentIndex = swiper.activeIndex;
@@ -79,7 +79,7 @@ export default function Projects() {
               {project.title}
             </h2>
             <p className=" text-white/60 md:text-[1vw] text-[3vw]">
-              {project.description}
+              {project.description.replace(/'/g, "&rsquo;")}
             </p>
 
             <div className="  text-main md:text-[0.8vw] text-[2.5vw] flex 2">
