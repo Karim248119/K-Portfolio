@@ -36,7 +36,7 @@ export default function Navbar() {
                 href={link.path}
                 className={`${
                   link.path === pathName && "text-main border-b-2 border-main"
-                } font-medium capitalize transition-all text-hover p-1 xl:text-lg text-xs `}
+                } font-medium capitalize transition-all text-hover p-1 xl:text-sm text-xs `}
               >
                 {link.name}
               </Link>

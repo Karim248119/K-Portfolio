@@ -39,53 +39,53 @@ export default function HomePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.4, delay: 1.5, ease: "easeIn" }}
-      className="relative xl:mt-20 bg-primary "
+      className="relative lg:mt-20 bg-primary"
     >
-      <div className="xl:h-[100vh] h-auto xl:w-[70%] w-full text-white grid xl:grid-cols-5 xl:grid-rows-1 grid-rows-2 mx-auto xl:-mt-20 ">
-        <div className="  pt-5  w-full h-full flex flex-col justify-center items-center xl:items-start gap-12 xl:col-span-3 order-2 xl:order-1">
-          <div className=" xl:text-5xl text-xl font-bold">Hello, I&apos;m</div>
-          <div className="xl:text-6xl text-2xl font-bold text-main">
+      <div className="lg:h-[100vh] h-auto lg:w-[70%] w-full text-white grid lg:grid-cols-5 lg:grid-rows-1 grid-rows-2 mx-auto lg:-mt-20">
+        <div className="pt-5 w-full h-full flex flex-col justify-center items-center lg:items-start gap-12 lg:col-span-3 order-2 lg:order-1">
+          <div className="lg:text-4xl text-xl font-bold">Hello, I&apos;m</div>
+          <div className="lg:text-5xl text-2xl font-bold text-main">
             Karim Abdelhalim
           </div>
-          <div className="xl:text-2xl text-sm">
+          <div className="lg:text-xl text-sm">
             I&apos;m <span className="text-main job" ref={el}></span>
           </div>
-          <div className="flex xl:gap-5 gap-2 xl:mt-10 mt-5 ">
+          <div className="flex lg:gap-5 gap-2 lg:mt-10 mt-5">
             <a href="/cv.pdf" download>
-              <button className=" xl:h-14  xl:px-5 h-8 p-2 flex justify-center items-center gap-2 bg-primary border-[2px] text-main border-main rounded-full xl:text-xl text-xs hover:text-primary hover:bg-main transition-all duration-300 ease-in-out">
+              <button className="lg:h-14 lg:px-5 h-8 p-2 flex justify-center items-center gap-2 bg-primary border-[2px] text-main border-main rounded-full lg:text-xl text-xs hover:text-primary hover:bg-main transition-all duration-300 ease-in-out">
                 download CV <FaDownload />
               </button>
             </a>
-            <div className="flex xl:gap-5 gap-2">
+            <div className="flex lg:gap-5 gap-2">
               <a
                 href="https://www.linkedin.com/in/karim-abdel-halim-95a97a248/"
-                className=" xl:h-14 xl:w-14 h-8 w-8 flex justify-center items-center bg-primary border-[2px] text-main border-main rounded-full xl:text-2xl text-xs  hover:text-primary hover:bg-main transition-all duration-300 ease-in-out"
+                className="lg:h-14 lg:w-14 h-8 w-8 flex justify-center items-center bg-primary border-[2px] text-main border-main rounded-full lg:text-2xl text-xs hover:text-primary hover:bg-main transition-all duration-300 ease-in-out"
               >
                 <FaLinkedinIn />
               </a>
               <a
                 href="https://github.com/Karim248119"
-                className=" xl:h-14 xl:w-14 h-8 w-8 flex justify-center items-center bg-primary border-[2px] text-main border-main rounded-full xl:text-2xl text-xs  hover:text-primary hover:bg-main transition-all duration-300 ease-in-out"
+                className="lg:h-14 lg:w-14 h-8 w-8 flex justify-center items-center bg-primary border-[2px] text-main border-main rounded-full lg:text-2xl text-xs hover:text-primary hover:bg-main transition-all duration-300 ease-in-out"
               >
                 <FaGithub />
               </a>
               <a
                 href="https://www.facebook.com/kareem.kemo.75098364?mibextid=ZbWKwL"
-                className=" xl:h-14 xl:w-14 h-8 w-8 flex justify-center items-center bg-primary border-[2px] text-main border-main rounded-full xl:text-2xl text-xs  hover:text-primary hover:bg-main transition-all duration-300 ease-in-out"
+                className="lg:h-14 lg:w-14 h-8 w-8 flex justify-center items-center bg-primary border-[2px] text-main border-main rounded-full lg:text-2xl text-xs hover:text-primary hover:bg-main transition-all duration-300 ease-in-out"
               >
                 <FaFacebookF />
               </a>
             </div>
           </div>
         </div>
-        <div className=" w-full h-full xl:col-span-2 order-1 xl:order-2 flex justify-center items-center">
+        <div className="w-full h-full lg:col-span-2 order-1 lg:order-2 flex justify-center items-center">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: 2, ease: "easeIn" }}
-            className="relative mt-20 xl:-mt-20"
+            className="relative mt-20 lg:-mt-20"
           >
-            <div className="xl:h-96 xl:w-96 w-44 h-44 rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+            <div className="lg:h-80 lg:w-80 w-44 h-44 rounded-full absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
               <Image
                 priority
                 quality={100}

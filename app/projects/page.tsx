@@ -9,6 +9,8 @@ import {
   FaChevronRight,
   FaGithub,
   FaGooglePlay,
+  FaLongArrowAltLeft,
+  FaLongArrowAltRight,
 } from "react-icons/fa";
 import { RxArrowTopRight } from "react-icons/rx";
 import { FaFigma } from "react-icons/fa6";
@@ -51,23 +53,27 @@ export default function Projects() {
                   <img
                     alt="project pic"
                     src={item.img}
-                    className=" w-full flex justify-center items-center text-black"
+                    className=" w-full aspect-[10/8] object-cover flex justify-center items-center text-black"
                   />
                 </SwiperSlide>
               ))}
             </Swiper>
-            <div className="flex justify-center gap-5 mt-2">
+            <div className="flex justify-between px-2 gap-5 mt-2">
               <button
-                className="bg-main rounded-full  p-1"
+                className="text-white hover:text-main p-2"
                 onClick={() => swiperRef.current?.slidePrev()}
               >
-                <FaChevronLeft />
+                <div className=" relative  overflow-hidden w-10 h-2 ">
+                  <FaLongArrowAltLeft size={30} className=" absolute -top-4" />
+                </div>
               </button>
               <button
-                className="bg-main rounded-full  p-1"
+                className="text-white hover:text-main  p-2"
                 onClick={() => swiperRef.current?.slideNext()}
               >
-                <FaChevronRight />
+                <div className=" relative  overflow-hidden w-10 h-2 ">
+                  <FaLongArrowAltRight size={30} className=" absolute -top-4" />
+                </div>
               </button>
             </div>
           </div>

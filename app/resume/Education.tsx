@@ -19,7 +19,7 @@ export default function Courses() {
         </p>
       </div>
       <ScrollArea>
-        <div className="h-[400px]  grid sm:grid-cols-2 gap-5">
+        <div className="h-[400px] md:h-[35vh] grid sm:grid-cols-2 gap-5">
           {COURSES.map((course, index) => {
             return (
               <div key={index} className="w-full bg-white/10 rounded-md p-5 ">

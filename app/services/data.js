@@ -1,33 +1,31 @@
-import { FaCode, FaMobileAlt } from "react-icons/fa";
+import { FaMobileAlt } from "react-icons/fa";
+import { FaCode, FaPalette, FaServer } from "react-icons/fa6";
 import { IoLogoDesignernews } from "react-icons/io5";
 import { MdDesignServices } from "react-icons/md";
 
 export const SERVICES = [
   {
+    id: "01",
     icon: <FaCode />,
-    title: "Web Develobment",
-    description: `I create responsive, high-performance websites tailored to your needs. From simple landing pages to complex web applications`,
+    title: "Web Development",
+    description: `I create responsive, high-performance websites tailored to your needs. From simple landing pages to complex web applications.`,
   },
   {
+    id: "02",
     icon: <FaMobileAlt />,
     title: "Mobile Apps",
     description: `I specialize in developing intuitive and feature-rich mobile applications. My mobile development services focus on delivering apps that provide a smooth user experience, high performance.`,
   },
   {
-    icon: <MdDesignServices />,
-    title: "ui/ux design",
-    description: `I design visually appealing and user-friendly interfaces that enhance user satisfaction and engagement. My UI/UX design services prioritize usability, accessibility, and a seamless user journey.`,
+    id: "03",
+    icon: <FaServer />,
+    title: "Backend Development",
+    description: `With a foundation in Node.js, I build the backend infrastructure needed to support your applications. I focus on efficient APIs, security, and scalability for smooth data flow.`,
   },
   {
-    icon: <IoLogoDesignernews />,
-    title: "Logo Design",
-    description: `I craft unique and memorable logos that effectively represent your brand identity. My designs ensure your logo stands out and makes a lasting impression.
-
-
-
-
-
-
-`,
+    id: "04",
+    icon: <MdDesignServices />,
+    title: "UI/UX Design",
+    description: `I bring concepts to life with visually appealing and user-centered designs. Leveraging Figma, I craft interfaces that prioritize usability and seamless user experiences.`,
   },
 ];

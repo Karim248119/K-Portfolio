@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 export default function Circle() {
   return (
     <motion.svg
-      className="xl:h-[25rem] xl:w-[25rem] w-48 h-48 "
+      className="lg:h-[24rem] lg:w-[24rem] w-48 h-48 "
       fill="transparent"
       viewBox="0 0 506 506"
       xmlns="http://www.w3.org/2000/svg"

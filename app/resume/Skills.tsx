@@ -7,7 +7,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { ScrollArea } from "@radix-ui/react-scroll-area";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 export default function Skills() {
   return (
@@ -19,23 +19,26 @@ export default function Skills() {
           in both website and mobile application technologies. I am also aware
           of some back-end technologies.
         </p>
-
-        {SKILLS.map((skill, index) => {
-          return (
-            <TooltipProvider key={index}>
-              <Tooltip>
-                <TooltipTrigger asChild>
-                  <div className=" flex  justify-center items-center sm:p-8 p-6 bg-white/10 rounded-lg text-white sm:text-5xl text-3xl  hover:text-main transition-all duration-300 cursor-pointer">
-                    {skill.icon}
-                  </div>
-                </TooltipTrigger>
-                <TooltipContent>
-                  <p>{skill.name}</p>
-                </TooltipContent>
-              </Tooltip>
-            </TooltipProvider>
-          );
-        })}
+        <div>
+          <div className=" md:h-[35vh] grid sm:grid-cols-7 grid-cols-3 gap-2 ">
+            {SKILLS.map((skill, index) => {
+              return (
+                <TooltipProvider key={index}>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <div className=" flex justify-center items-center p-6  bg-white/10 rounded-lg text-white sm:text-3xl text-3xl  hover:text-main transition-all duration-300 cursor-pointer">
+                        {skill.icon}
+                      </div>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p>{skill.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </TabsContent>
   );

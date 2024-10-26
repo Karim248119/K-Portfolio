@@ -18,9 +18,9 @@ export default function Resume() {
       <div className=" xl:w-[60%] w-[90%] h-[30vh]   ">
         <Tabs
           defaultValue="About"
-          className=" w-full flex flex-col sm:flex-row justify-center gap-16 sm:gap-0  "
+          className=" w-full flex flex-col sm:flex-row justify-center gap-16 sm:gap-0"
         >
-          <TabsList className="flex flex-col sm:w-1/3 sm:px-10  w-full mx-auto sm:gap-6 gap-3 mt-10 sm:mt-0  justify-start text-sm ">
+          <TabsList className="flex flex-col sm:w-1/3 sm:px-10  w-full mx-auto sm:gap-3 gap-2 mt-10 sm:mt-0  justify-start text-sm ">
             <TabsTrigger className="" value="About">
               About me
             </TabsTrigger>
