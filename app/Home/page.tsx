@@ -43,12 +43,12 @@ export default function HomePage() {
     >
       <div className="lg:h-[100vh] h-auto lg:w-[70%] w-full text-white grid lg:grid-cols-5 lg:grid-rows-1 grid-rows-2 mx-auto lg:-mt-20">
         <div className="pt-5 w-full h-full flex flex-col justify-center items-center lg:items-start gap-12 lg:col-span-3 order-2 lg:order-1">
-          <div className="lg:text-4xl text-xl font-bold">Hello, I&apos;m</div>
+          <div className="lg:text-4xl text-xl font-bold">Hello, I am</div>
           <div className="lg:text-5xl text-2xl font-bold text-main">
             Karim Abdelhalim
           </div>
           <div className="lg:text-xl text-sm">
-            I&apos;m <span className="text-main job" ref={el}></span>
+            I am a <span className="text-main job" ref={el}></span>
           </div>
           <div className="flex lg:gap-5 gap-2 lg:mt-10 mt-5">
             <a href="/cv.pdf" download>
