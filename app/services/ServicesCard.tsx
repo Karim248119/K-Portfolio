@@ -10,7 +10,7 @@ export default function ServicesCard({
   title,
   description,
 }: {
-  id: string;
+  id?: string;
   icon: any;
   title: string;
   description: string;
