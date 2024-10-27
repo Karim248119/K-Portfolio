@@ -73,10 +73,13 @@
   body {
     @apply bg-background text-foreground;
     background-color: "#000";
+    font-family: var(--font-mono);
   }
 }
 :root {
   --main-color--: #00ffff;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
 }
 .text-outline {
   -webkit-text-stroke: 1px #ffffff;
