@@ -25,7 +25,7 @@ Educational app for medical students features a vast collection of questions for
   {
     num: "03",
     title: "UnityCare",
-    img: "/images/Project/unity.gif",
+    img: "/images/Project/unity.png",
     skills: "Next.JS, Tailwind, TypeScript",
     description: `This platform was developed to provide a comprehensive online solution for healthcare services. It allows patients to easily book appointments, access information about doctors and medical specialities, and stay informed with the latest medical news. The website is designed to be scalable, secure, and user-friendly. Our goal is to streamline healthcare interactions for both patients and administrators.`,
     github: "https://github.com/Karim248119/hospital",
@@ -53,7 +53,7 @@ Educational app for medical students features a vast collection of questions for
     title: "Delivery App",
     img: "/images/Project/delivery.png",
     skills: "React Native",
-    description: `Library app that offers a diverse collection of books, each with comprehensive information. It includes features such as a search bar, the ability to add books to your favorites, a reading progress tracker, and a dedicated screen for adding your favorite quotes. These functionalities ensure an enriched reading experience and help you keep track of your literary journey.`,
+    description: `A user-friendly mobile delivery app developed using React Native and Expo, focused on providing an intuitive and visually appealing experience for tracking orders and browsing delivery options. This application was designed to showcase seamless navigation and smooth user interactions, making it easy for users to explore available delivery services and monitor their orders in real time.`,
     github: "https://github.com/Karim248119/K-Dlivery",
   },
   {

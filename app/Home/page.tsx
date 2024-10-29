@@ -53,7 +53,7 @@ export default function HomePage() {
             I&apos;m a <span className="text-main job" ref={el}></span>
           </div>
           <div className="flex lg:gap-5 gap-2 lg:mt-10 mt-5">
-            <a href="/cv.pdf" download>
+            <a href="/Karim Abelhalim.pdf" download>
               <button className="lg:h-14 lg:px-5 h-8 p-2 flex justify-center items-center gap-2 bg-primary border-[2px] text-main border-main rounded-full lg:text-xl text-xs hover:text-primary hover:bg-main transition-all duration-300 ease-in-out">
                 download CV <FaDownload />
               </button>
