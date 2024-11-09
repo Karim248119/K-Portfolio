@@ -28,7 +28,7 @@ export const MobileProjects = [
     github: "https://github.com/Karim248119/K-Dlivery",
   },
   {
-    num: "05",
+    num: "04",
     title: "Babel Library",
     img: "/images/Project/babelApp.png",
     skills: "React Native, TypeScript",
@@ -36,7 +36,7 @@ export const MobileProjects = [
     github: "https://github.com/Karim248119/Babel-Library",
   },
   {
-    num: "04",
+    num: "05",
     title: "Heavenly Restriction",
     img: "/images/Project/HR.png",
     skills: "React Native, MongoDB, Express.JS, TypeScript, Figma",
@@ -44,7 +44,7 @@ export const MobileProjects = [
     github: "https://github.com/Karim248119/Heavenly-Restriction",
   },
   {
-    num: "05",
+    num: "06",
     title: "Night Activities",
     img: "/images/Project/na.png",
     skills: "React Native, TypeScript, Firebase, Figma, Canva",
@@ -53,7 +53,7 @@ export const MobileProjects = [
       "https://www.figma.com/design/evOWv5bNFT0ptlfrLXJ3kr/NA?m=auto&t=qYNbn13d2TdLqKBo-6",
   },
   {
-    num: "06",
+    num: "07",
     title: "Lady Store",
     img: "/images/Project/lsApp.png",
     skills: "React Native, Figma, Canva",
